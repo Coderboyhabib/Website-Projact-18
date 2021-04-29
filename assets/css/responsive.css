@@ -1,0 +1,64 @@
+/*******************************
+	All Responsive Code
+*******************************/
+
+@media (max-width: 991px) {
+    .navbar ul {
+        background: #000;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_images h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header_contant p {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 575px) {
+    .header_contant p {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 425px) {
+    footer {
+        text-align: center;
+    }
+
+    footer .text-left {
+        display: inline-flex;
+    }
+
+    footer .float-right {
+        display: inline-flex;
+    }
+}
+
+@media (max-width: 360px) {
+    footer {
+        text-align: center;
+    }
+
+    footer .text-left {
+        display: inline-flex;
+    }
+
+    footer .float-right {
+        display: inline-flex;
+    }
+}
+
+@media (max-width: 320px) {
+    .header_images h1 {
+        font-size: 30px;
+    }
+}

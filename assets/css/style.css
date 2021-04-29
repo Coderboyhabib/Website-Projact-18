@@ -1,0 +1,1125 @@
+/*
+===================================================
+Google Fonts font-family: 'Raleway', sans-serif;
+===================================================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+/*
+======================================================
+Google Fonts font-family: 'Montserrat', sans-serif;
+======================================================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/*
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.section_padding {
+    padding: 80px 0px;
+}
+
+.section_header h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.section_header h2 span {
+    color: #ff0000;
+}
+
+.section_header h2::after {
+    content: '';
+    position: absolute;
+    width: 155px;
+    height: 2px;
+    background: #ff0000;
+    top: 100%;
+    left: 50%;
+    margin-left: -77.5px;
+    margin-top: 8px;
+}
+
+.section_header h2::before {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background: #ff0000;
+    border-radius: 50%;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+}
+
+.contant_top_space {
+    margin-top: 70px;
+}
+
+/*
+==========================================
+    HEADER MENU CSS
+==========================================
+*/
+.navbar {
+    position: relative;
+    width: 100%;
+}
+
+.navbar::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #393838;
+    opacity: .49;
+    z-index: -10;
+}
+
+.navbar ul li {
+    float: left;
+    margin-left: 26px;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.navbar ul li a:hover {
+    color: #ff0000;
+}
+
+nav i.fas {
+    color: #ffa500;
+    font-size: 35px;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: .3s;
+    outline: none;
+}
+
+nav i.fas:hover {
+    color: #fff;
+    background: #ffa500;
+}
+
+button:focus {
+    outline: 0px dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+}
+
+/*
+==========================================
+    HEADER IMG CSS
+==========================================
+*/
+.header_images {
+    position: relative;
+    background: url('../img/hero_background.jpg');
+    background-position: center center;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    background-attachment: fixed;
+}
+
+.header_images::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #252525;
+    opacity: 0.42;
+    z-index: -1;
+}
+
+.d_table {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.d_table_self {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header_images,
+.container,
+.header_images,
+.row,
+.header_images,
+.col-md-12 {
+    height: 100%;
+}
+
+.header_contant h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.header_contant {
+    color: #fff;
+    margin-top: 25px;
+}
+
+.header_contant h1 span {
+    color: #fe320a;
+    font-weight: 700;
+}
+
+.header_contant p {
+    max-width: 850px;
+    margin: 22px auto 36px auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.header_contant a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    background: #ff0000;
+    padding: 9px 32px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    transition: .3s;
+}
+
+.header_contant a:hover {
+    background: #fff;
+    color: #ff0000;
+}
+
+
+/*
+==========================================
+    About Css Start
+==========================================
+*/
+.about {
+    background: #f6f6f6;
+}
+
+.abut_left img {
+    width: 100%;
+    height: auto;
+}
+
+.abut_left {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.abut_left .about_left_details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 12px 0;
+}
+
+.abut_left .about_left_details::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #252525;
+    content: '';
+    z-index: -1;
+    opacity: .70;
+}
+
+.abut_left h4 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.about_left_details ul li {
+    display: inline;
+}
+
+.about_left_details ul li a {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #252525;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    line-height: 35px;
+    margin: 5px;
+    transition: .3s;
+}
+
+.about_left_details ul li a:hover {
+    background: #ffff;
+    color: #252525;
+}
+
+.about_right h3 {
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.about_right p {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 27px;
+    margin-top: 25px;
+    color: #2d2d2d;
+}
+
+.about_right p strong {
+    color: #5d5555;
+}
+
+.about_right a {
+    text-decoration: none;
+    font-size: 20px;
+    background: #ff0000;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    padding: 10px 22px;
+    margin-top: 40px;
+    border: 2px solid transparent;
+    transition: .3s;
+}
+
+.about_right a:hover {
+    background: #ffff;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    border-radius: 3px;
+}
+
+.abut_left:hover img {
+    transform: scale(1.1);
+}
+
+.abut_left img {
+    transition: transform .5s, filter 1.5s ease-in-out;
+}
+
+/*
+==========================================
+    Video Area Seccion
+==========================================
+*/
+
+.video_area {
+    background: url('../img/video_background.jpg');
+    position: relative;
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-attachment: fixed;
+}
+
+.video_area::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.60;
+    z-index: -1;
+}
+
+.video_area h2 {
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+.video_icon a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.video_icon {
+    margin-top: 40px;
+}
+
+.video_icon a:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #942929;
+}
+
+/*
+==========================================
+    Services Section Start
+==========================================
+*/
+.services_box i {
+    color: #fff;
+    font-size: 48px;
+}
+
+.services_box h4 {
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin: 13px 0;
+}
+
+.services_box p {
+    line-height: 24px;
+    color: #fff;
+}
+
+.services_box:hover {
+    background: orange;
+    box-shadow: 0 0 10px #847e7e;
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.services_box {
+    padding: 10px 20px;
+    border: 2px solid #c18224;
+    border-radius: 5px;
+    transition: all .3s;
+    box-shadow: 0 0 2px #d9020a;
+    background-color: rgb(254, 208, 61);
+}
+
+/*
+==========================================
+    Skill Section Start
+==========================================
+*/
+
+.my_skills {
+    background: #fbfbfb;
+}
+
+.skill_left h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #151515;
+}
+
+.skill_left p {
+    font-weight: 300;
+    color: #515151;
+    line-height: 26px;
+    margin-top: 20px;
+}
+
+.skill_left p:last-child {
+    margin-top: 30px;
+}
+
+.skill_right h3 {
+    font-size: 24px;
+    color: #1b1b1b;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.skill_right p {
+    line-height: 26px;
+    font-weight: 300;
+    color: #2c2b2b;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 18px;
+}
+
+/* Skill plugin css  Start*/
+
+.skillbar {
+    position: relative;
+    display: inline-block;
+    margin: 15px 0;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    background: #6adcfa;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.skillbar p {
+    margin-top: 0;
+}
+
+.sanjida_skill_bar .skillbar {
+    background: #000;
+    height: 0;
+    border-radius: 30px;
+    padding: 10px 0px;
+    overflow: hidden;
+}
+
+.sanjida_skill_bar p.skillbar-bar {
+    background: #ff0000 !important;
+    height: 10px;
+    position: absolute;
+    top: 4.3px;
+    left: 6px;
+}
+
+.sanjida_skill_bar span {
+    color: #fff;
+    position: absolute;
+    top: -8px;
+}
+
+h4.skill_bar_title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #2c2b2b;
+    font-weight: 400;
+    margin-bottom: -5px;
+    margin-top: 14px;
+}
+
+.sanjida_skill_bar .skillbar {
+    margin-bottom: 8px;
+}
+
+/* Skill plugin css  End*/
+
+
+/*
+==========================================
+    Counter Up Css Start
+==========================================
+*/
+
+.counter {
+    background: url('../img/counter_up_bg.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    background-attachment: fixed;
+}
+
+.counter::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .6;
+    z-index: -1;
+}
+
+
+.counter_box {
+    color: #fff;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.counter_box i {
+    font-size: 22px;
+    border: 1px solid #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.counter_box .counter_number {
+    font-size: 28px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.counter_box p:last-child {
+    font-size: 26px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.counter_box:hover i {
+    color: #000;
+    background: #fff;
+    border: 1px solid #ff0000;
+}
+
+/*
+==========================================
+    Portfolio Css Start
+==========================================
+*/
+
+.fortfolio_controler {
+    text-align: center;
+}
+
+.portfolio_top_space {
+    margin-top: 40px;
+}
+
+.fortfolio_controler button {
+    background: none;
+    transition: .5s;
+    border: none;
+    text-transform: uppercase;
+    color: #3c3c3c;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+.fortfolio_controler .mixitup-control-active {
+    color: orange;
+}
+
+.portfolio_item {
+    position: relative;
+}
+
+.portfolio_item:hover .portfolio_item_hover {
+    opacity: 1;
+    transform: scale(1);
+    cursor: crosshair;
+}
+
+.portfolio_item_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: #ff00009e;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.portfolio_item i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.portfolio_item a {
+    color: #fff;
+}
+
+/*
+==========================================
+    Team Css Start
+==========================================
+*/
+
+.team {
+    background: #f2f2f2;
+}
+
+.team_item {
+    position: relative;
+    overflow: hidden;
+}
+
+.team_item_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    color: #fff;
+}
+
+.team_item_hover::after {
+    content: '';
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    visibility: hidden;
+    transition: .3s;
+    opacity: 0;
+}
+
+.team_item:hover .team_item_hover::after {
+    visibility: visible;
+    opacity: 0.44;
+}
+
+.team_item:hover .team_hover_contant {
+    bottom: 0;
+}
+
+.team_hover_contant {
+    position: absolute;
+    background: red;
+    width: 100%;
+    bottom: -70px;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    transition: .4s;
+}
+
+h4.team_name {
+    text-transform: uppercase;
+}
+
+.team_hover_contant ul li {
+    display: inline;
+}
+
+.team_hover_contant ul li a {
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin: 2px 7px;
+}
+
+.team_hover_contant ul {
+    margin-top: 4px;
+}
+
+.team_item img {
+    transition: transform .5s, filter 1.5s ease-in-out;
+}
+
+.team_item:hover img {
+    transform: scale(1.1);
+}
+
+/*
+==========================================
+    Tastimonail Css Start
+==========================================
+*/
+.tastimonial {
+    background: url('../img/tastimonial_bg.jpg');
+    background-size: cover;
+    color: #fff;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+}
+
+.tastimonial::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+    z-index: -1;
+}
+
+.tastimonial .owl-carousel img {
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 101px;
+    height: 101px;
+}
+
+h4.tastimonial_name {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.tastimonial_item p {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*
+==========================================
+    Blog Css Start
+==========================================
+*/
+
+.blog_item {
+    box-shadow: 0 0 15px #cec4c4;
+    transition: .5s;
+    border-radius: 5px;
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+.blog_item:hover img {
+    transform: scale(1.1);
+}
+
+.blog_item img {
+    max-width: 100%;
+    border-bottom: 8px solid #464646;
+    transition: transform .5s, filter 1.5s ease-in-out;
+}
+
+.blog_item img:hover {
+    border-bottom: 8px solid #ff0000;
+}
+
+article.blog_details {
+    padding: 19px 20px;
+}
+
+article.blog_details .Blog_title {
+    font-size: 24px;
+    color: #433f3f;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+
+article.blog_details .Blog_date {
+    font-size: 13px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+}
+
+article.blog_details .bolg_p {
+    line-height: 24px;
+    color: #433f3f;
+    font-family: 'Raleway', sans-serif;
+}
+
+a.blog_button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #385fcf;
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-top: 14px;
+    transition: .3s;
+    border: 1px solid #f6c23e;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 3px;
+}
+
+a.blog_button:hover {
+    background: transparent;
+    color: #000;
+    border: 1px solid #3960cf;
+    box-shadow: 0 0 2px #464646;
+}
+
+.blog_item:hover {
+    transform: translate3d(0px, -5px, 0px);
+    box-shadow: 0 0 12px #cea0a0;
+}
+
+
+/*
+==========================================
+     Contact Css Start
+==========================================
+*/
+.Contact_us .row {
+    height: auto;
+}
+
+.Contact_us {
+    background: url('../img/contact_bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    background-attachment: fixed;
+}
+
+.Contact_us:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    opacity: .55;
+}
+
+.Contact_us h2 {
+    color: #fff;
+}
+
+.Contact_us input {
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 0;
+    margin-bottom: 25px;
+    height: 45px;
+}
+
+.Contact_us input::placeholder {
+    color: #fff;
+}
+
+.Contact_us textarea {
+    background: transparent;
+    border: 2px solid #fff;
+    height: 150px;
+    padding-top: 20px;
+    margin-bottom: 25px;
+    border-radius: 0;
+}
+
+.Contact_us textarea::placeholder {
+    color: #fff;
+}
+
+.Contact_us button {
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    border: 2px solid #fff;
+    font-weight: 400;
+    padding: 7px 15px;
+    transition: .3s;
+    outline: none;
+}
+
+.Contact_us button:hover {
+    background: #a59b9b;
+    color: #000;
+}
+
+.Contact_us .form-control:focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    outline: 0;
+    box-shadow: none;
+}
+
+footer {
+    background: #121212;
+    color: #fff;
+    padding: 30px 0;
+}
+
+footer ul li {
+    float: left;
+    margin-right: 15px;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+
+footer ul li a {
+    color: #fff;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*
+==========================================
+     Schrool to top Css Start
+==========================================
+*/
+
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*
+==========================================
+     Preloder Css Start
+==========================================
+*/
+
+.fixed-top {
+    z-index: 10;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 999;
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-image: url(../img/Bubble-Preloader-1-1.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+}
